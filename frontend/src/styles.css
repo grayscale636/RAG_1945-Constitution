@@ -1,0 +1,80 @@
+/* Gaya untuk tampilan chat */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    max-height: 400px; /* Batasi tinggi area chat */
+    overflow-y: auto; /* Scroll jika konten melebihi tinggi */
+    margin-top: 20px;
+    border: 1px solid #0077b3; /* Bingkai biru laut */
+    border-radius: 8px; /* Sudut membulat */
+    padding: 10px; /* Ruang di dalam bingkai */
+    background-color: #ffffff; /* Latar belakang putih */
+    flex-grow: 1; /* Membuat area chat mengisi ruang yang tersedia */
+    width: 100%; /* Lebar maksimal */
+}
+
+.message {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+    max-width: 70%; /* Batasi lebar pesan */
+}
+
+.user-message {
+    background-color: #0077b3; /* Biru laut untuk pesan pengguna */
+    color: #ffffff; /* Teks putih */
+    align-self: flex-end; /* Pesan pengguna di kanan */
+}
+
+.ai-message {
+    background-color: #e6f7ff; /* Biru muda untuk pesan AI */
+    color: #333; /* Teks gelap */
+    align-self: flex-start; /* Pesan AI di kiri */
+}
+
+/* Gaya untuk kontainer chatbot */
+.chatbot-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Mengisi tinggi kontainer */
+}
+
+/* Gaya untuk form */
+form {
+    display: flex;
+    margin-top: 10px; /* Ruang di atas form */
+}
+
+form input {
+    flex: 1; /* Membuat input mengisi ruang yang tersedia */
+    margin-right: 10px; /* Ruang di antara input dan tombol */
+}
+
+form button {
+    padding: 10px;
+    background-color: #0077b3; /* Biru laut */
+    color: #ffffff; /* Teks putih */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #005f8a; /* Warna lebih gelap saat hover */
+}
+
+/* Gaya untuk kontainer chatbot agar mengisi ruang */
+.chatbot-container {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 100px); /* Mengisi tinggi viewport, sesuaikan dengan header */
+}
+
+/* Gaya untuk tombol hapus riwayat chat */
+.btn-small {
+    font-size: 0.8rem; /* Ukuran font lebih kecil */
+    padding: 0.2rem 0.4rem; /* Padding lebih kecil */
+    margin-top: 1rem; /* Jarak atas */
+    border-radius: 0.2rem; /* Sudut membulat */
+    line-height: 1; /* Mengatur tinggi baris */
+}
